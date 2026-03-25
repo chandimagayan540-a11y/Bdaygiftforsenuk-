@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Senuk</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <title>happy birthday senuk</title>
+    <link href="https://fonts.googleapis.com/css2?family=great+vibes&family=poppins:wght@300;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --pink-grad: linear-gradient(-45deg, #ff00cc, #ff66b2, #ff0066, #ff99cc, #cc0066);
@@ -15,7 +15,7 @@
             padding: 0;
             min-height: 100vh;
             background: #0d0d0d;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'poppins', sans-serif;
             overflow-x: hidden;
         }
 
@@ -36,10 +36,10 @@
 
         #toggle:checked ~ .bg-layer {
             opacity: 1;
-            animation: pinkFlow 10s ease infinite;
+            animation: pinkflow 10s ease infinite;
         }
 
-        @keyframes pinkFlow {
+        @keyframes pinkflow {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
@@ -65,7 +65,7 @@
             font-size: 1.1rem;
             z-index: 50;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            text-transform: uppercase;
+            text-transform: lowercase;
             letter-spacing: 2px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.4);
         }
@@ -86,13 +86,14 @@
 
         .birthday-box h1 {
             margin: 0;
-            font-family: 'Great Vibes', cursive; 
+            font-family: 'great vibes', cursive; 
             font-size: 6.5rem;
             color: white;
             background: linear-gradient(to bottom, #fff 30%, #ffd700 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.4));
+            text-transform: lowercase;
         }
 
         .sub-text {
@@ -100,7 +101,7 @@
             font-size: 1.2rem;
             margin-top: 10px;
             letter-spacing: 3px;
-            text-transform: uppercase;
+            text-transform: lowercase;
             opacity: 0.9;
         }
 
@@ -169,6 +170,7 @@
             margin-top: 15px;
             font-size: 0.9rem;
             letter-spacing: 1px;
+            text-transform: lowercase;
         }
 
         .footer-text {
@@ -179,6 +181,7 @@
             text-align: center;
             letter-spacing: 1px;
             transition: opacity 2s ease 3.5s;
+            text-transform: lowercase;
         }
 
         .sparkle-container {
@@ -221,76 +224,76 @@
     <div class="overlay" id="overlay"></div>
 
     <div class="main-wrapper">
-        <label for="toggle" class="button">Open Your Surprise</label>
+        <label for="toggle" class="button">open your surprise</label>
 
         <div class="sparkle-container" id="sparkle-container"></div>
 
         <div class="birthday-box">
-            <h1>Happy Birthday Senuk!!</h1>
-            <div class="sub-text">From your friend Tharin.</div>
+            <h1>happy birthday senuk!!</h1>
+            <div class="sub-text">from your friend tharin.</div>
             <audio src="t.mp3" loop></audio>
         </div>
 
         <div class="gallery">
-            <div class="pic-card" onclick="toggleZoom(this)">
+            <div class="pic-card" onclick="togglezoom(this)">
                 <div class="img-box"><img src="seunk.jpg" alt="1"></div>
-                <div class="caption">Happy 14th birthday</div>
+                <div class="caption">happy 14th birthday</div>
             </div>
-            <div class="pic-card" onclick="toggleZoom(this)">
+            <div class="pic-card" onclick="togglezoom(this)">
                 <div class="img-box"><img src="senuk1.jpg" alt="2"></div>
-                <div class="caption">May all your wishes come true</div>
+                <div class="caption">may all your wishes come true</div>
             </div>
-            <div class="pic-card" onclick="toggleZoom(this)">
+            <div class="pic-card" onclick="togglezoom(this)">
                 <div class="img-box"><img src="senuk2.jpg" alt="3"></div>
-                <div class="caption">Hope you enjoy your special day</div>
+                <div class="caption">hope you enjoy your special day</div>
             </div>
-            <div class="pic-card" onclick="toggleZoom(this)">
+            <div class="pic-card" onclick="togglezoom(this)">
                 <div class="img-box"><img src="senuk3.jpg" alt="4"></div>
                 <div class="caption">"so cute" said my mom</div>
             </div>
-            <div class="pic-card" onclick="toggleZoom(this)">
+            <div class="pic-card" onclick="togglezoom(this)">
                 <div class="img-box"><img src="senuk4.jpg" alt="5"></div>
-                <div class="caption">Stay awesome </div>
+                <div class="caption">stay awesome </div>
             </div>
-            <div class="pic-card" onclick="toggleZoom(this)">
+            <div class="pic-card" onclick="togglezoom(this)">
                 <div class="img-box"><img src="senuk5.jpg" alt="6"></div>
-                <div class="caption">Cheers to many more years</div>
+                <div class="caption">cheers to many more years</div>
             </div>
         </div>
 
         <div class="footer-text">
-            🥳I hope you enjoyed this.🥳
+            🥳i hope you enjoyed this.🥳
         </div>
     </div>
 
     <script>
-        const toggle = document.getElementById('toggle');
-        const audio = document.querySelector('audio');
-        const container = document.getElementById('sparkle-container');
-        const overlay = document.getElementById('overlay');
+        const toggle = document.getelementbyid('toggle');
+        const audio = document.queryselector('audio');
+        const container = document.getelementbyid('sparkle-container');
+        const overlay = document.getelementbyid('overlay');
 
-        function toggleZoom(card) {
-            card.classList.toggle('zoomed');
-            overlay.classList.toggle('active');
+        function togglezoom(card) {
+            card.classlist.toggle('zoomed');
+            overlay.classlist.toggle('active');
         }
 
-        overlay.addEventListener('click', () => {
-            const zoomedCard = document.querySelector('.pic-card.zoomed');
-            if (zoomedCard) zoomedCard.classList.remove('zoomed');
-            overlay.classList.remove('active');
+        overlay.addeventlistener('click', () => {
+            const zoomedcard = document.queryselector('.pic-card.zoomed');
+            if (zoomedcard) zoomedcard.classlist.remove('zoomed');
+            overlay.classlist.remove('active');
         });
 
         for (let i = 0; i < 100; i++) {
-            const s = document.createElement('div');
-            s.className = 'sparkle';
-            s.style.width = s.style.height = (Math.random() * 4 + 2) + 'px';
-            s.style.left = Math.random() * 100 + '%';
-            s.style.animationDuration = (Math.random() * 5 + 5) + 's';
-            s.style.animationDelay = Math.random() * 5 + 's';
-            container.appendChild(s);
+            const s = document.createelement('div');
+            s.classname = 'sparkle';
+            s.style.width = s.style.height = (math.random() * 4 + 2) + 'px';
+            s.style.left = math.random() * 100 + '%';
+            s.style.animationduration = (math.random() * 5 + 5) + 's';
+            s.style.animationdelay = math.random() * 5 + 's';
+            container.appendchild(s);
         }
 
-        toggle.addEventListener('change', function() {
+        toggle.addeventlistener('change', function() {
             if (this.checked) audio.play().catch(() => {});
         });
         
